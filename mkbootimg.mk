@@ -7,7 +7,7 @@ LOCAL_PATH := $(call my-dir)
 ## Imported from the original makefile...
 G2_DTS_NAMES := msm8974
 
-G2_DTS_FILES = $(wildcard $(TOP)/$(TARGET_KERNEL_SOURCE)/arch/arm/boot/dts/msm8974pro/msm8974pro-ac-sec-kkor*.dts) $(wildcard $(TOP)/$(TARGET_KERNEL_SOURCE)/arch/arm/boot/dts/msm8974pro/msm8974pro-ac-sec-k-*.dts)
+G2_DTS_FILES = $(TOP)/$(TARGET_KERNEL_SOURCE)/arch/arm/boot/dts/msm8974pro/msm8974pro-ac-sec-k-r03.dts $(TOP)/$(TARGET_KERNEL_SOURCE)/arch/arm/boot/dts/msm8974pro/msm8974pro-ac-sec-k-r04.dts $(TOP)/$(TARGET_KERNEL_SOURCE)/arch/arm/boot/dts/msm8974pro/msm8974pro-ac-sec-k-r05.dts $(TOP)/$(TARGET_KERNEL_SOURCE)/arch/arm/boot/dts/msm8974pro/msm8974pro-ac-sec-k-r06.dts $(TOP)/$(TARGET_KERNEL_SOURCE)/arch/arm/boot/dts/msm8974pro/msm8974pro-ac-sec-k-r07.dts $(TOP)/$(TARGET_KERNEL_SOURCE)/arch/arm/boot/dts/msm8974pro/msm8974pro-ac-sec-k-r08.dts $(TOP)/$(TARGET_KERNEL_SOURCE)/arch/arm/boot/dts/msm8974pro/msm8974pro-ac-sec-kltnduos-r14.dts 
 G2_DTS_FILE = $(lastword $(subst /, ,$(1)))
 DTB_FILE = $(addprefix $(KERNEL_OUT)/arch/arm/boot/,$(patsubst %.dts,%.dtb,$(call G2_DTS_FILE,$(1))))
 ZIMG_FILE = $(addprefix $(KERNEL_OUT)/arch/arm/boot/,$(patsubst %.dts,%-zImage,$(call G2_DTS_FILE,$(1))))
