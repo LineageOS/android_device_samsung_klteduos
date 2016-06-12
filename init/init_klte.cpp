@@ -63,10 +63,10 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
 
     if (strstr(bootloader, "G900FD")) {
         /* klteduosxx */
-        property_set("ro.build.fingerprint", "samsung/klteduos/klteduos:5.0/LRX21T/G900FDXXU1BOE2:user/release-keys");
-        property_set("ro.build.description", "klteduos-user 5.0 LRX21T G900FDXXU1BOE2 release-keys");
+        property_set("ro.build.fingerprint", "samsung/klteduosxx/klte:6.0.1/MMB29M/G900FDXXU1CPE1:user/release-keys");
+        property_set("ro.build.description", "klteduosxx-user 6.0.1 MMB29M G900FDXXU1CPE1 release-keys");
         property_set("ro.product.model", "SM-G900FD");
-        property_set("ro.product.device", "klteduos");
+        property_set("ro.product.device", "klte");
         gsm_properties();
     } else if (strstr(bootloader, "G900MD")) {
         /* klteduosub */
