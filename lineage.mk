@@ -5,4 +5,4 @@ $(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
 $(call inherit-product, device/samsung/klteduos/full_klteduos.mk)
 
 PRODUCT_DEVICE := klteduos
-PRODUCT_NAME := cm_klteduos
+PRODUCT_NAME := lineage_klteduos
