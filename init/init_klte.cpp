@@ -54,17 +54,17 @@ void init_target_properties()
 
     if (bootloader.find("G900FD") == 0) {
         /* klteduosxx */
-        property_set("ro.build.fingerprint", "samsung/klteduosxx/klte:6.0.1/MMB29M/G900FDXXS1CQD2:user/release-keys");
-        property_set("ro.build.description", "klteduosxx-user 6.0.1 MMB29M G900FDXXS1CQD2 release-keys");
-        property_set("ro.product.model", "SM-G900FD");
-        property_set("ro.product.device", "klte");
+        property_override("ro.build.fingerprint", "samsung/klteduosxx/klte:6.0.1/MMB29M/G900FDXXS1CQD2:user/release-keys");
+        property_override("ro.build.description", "klteduosxx-user 6.0.1 MMB29M G900FDXXS1CQD2 release-keys");
+        property_override("ro.product.model", "SM-G900FD");
+        property_override("ro.product.device", "klte");
         gsm_properties();
     } else if (bootloader.find("G900MD") == 0) {
         /* klteduosub */
-        property_set("ro.build.fingerprint", "samsung/klteduosub/klte:6.0.1/MMB29M/G900MDUBS1CQD2:user/release-keys");
-        property_set("ro.build.description", "klteduosub-user 6.0.1 MMB29M G900MDUBS1CQD2 release-keys");
-        property_set("ro.product.model", "SM-G900MD");
-        property_set("ro.product.device", "klte");
+        property_override("ro.build.fingerprint", "samsung/klteduosub/klte:6.0.1/MMB29M/G900MDUBS1CQD2:user/release-keys");
+        property_override("ro.build.description", "klteduosub-user 6.0.1 MMB29M G900MDUBS1CQD2 release-keys");
+        property_override("ro.product.model", "SM-G900MD");
+        property_override("ro.product.device", "klte");
         gsm_properties();
     }
 
