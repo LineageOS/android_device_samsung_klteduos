@@ -1,19 +1,4 @@
-# CNE
-vendor/lib/libcne.so
-vendor/lib/libcneapiclient.so
-vendor/lib/libcneconn.so
-vendor/lib/libcneqmiutils.so
-vendor/lib/libmasc.so
-vendor/lib/libNimsWrap.so
-vendor/lib/libvendorconn.so
-vendor/lib/libwqe.so
-vendor/lib/libxml.so
-
-# Listen service
-vendor/lib/liblistenhardware.so
-vendor/lib/liblistenjni.so
-vendor/lib/liblisten.so
-vendor/lib/liblistensoundmodel.so
+# Samsung Package Version: G900FDXXS1BPC3_G900FDOJV1BOI1_XSG, unless pinned
 
 # Radio
 bin/efsks
@@ -31,22 +16,3 @@ lib/libsec-ril-dsds.so
 lib/libsecnativefeature.so
 lib/libsecril-client.so
 vendor/lib/libril-qcril-hook-oem.so
-
-# WFD
-vendor/lib/libwfdcommonutils.so
-vendor/lib/libwfdhdcpcp.so
-vendor/lib/libwfdmmsink.so
-vendor/lib/libwfdmmsrc.so
-vendor/lib/libwfdmmutils.so
-vendor/lib/libwfdnative.so
-vendor/lib/libwfdrtsp.so
-vendor/lib/libwfdsm.so
-vendor/lib/libwfduibcinterface.so
-vendor/lib/libwfduibcsink.so
-vendor/lib/libwfduibcsinkinterface.so
-vendor/lib/libwfduibcsrc.so
-vendor/lib/libwfduibcsrcinterface.so
-vendor/lib/libmmwfdinterface.so
-vendor/lib/libmmwfdsinkinterface.so
-vendor/lib/libmmwfdsrcinterface.so
-
