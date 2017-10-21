@@ -1,16 +1,4 @@
-# Samsung Package Version: G900FDXXS1BPC3_G900FDOJV1BOI1_XSG, unless pinned
-
-# Radio
-bin/efsks
-bin/ks
-bin/qcks
-bin/qmuxd
-bin/rfs_access
-bin/rild
-bin/rmt_storage
-lib/libreference-ril.so
-lib/libril.so
-lib/librilutils.so
-lib/libsec-ril.so
-lib/libsec-ril-dsds.so
-vendor/lib/libril-qcril-hook-oem.so
+# Radio - pinned to G900FDXXS1BPC3_G900FDOJV1BOI1_XSG
+lib/libril.so|1f600c3de535bf1370c310723032f0e7e9ea4840
+lib/libsec-ril.so|584d767135810394577caca865660638f348caa1
+lib/libsec-ril-dsds.so|a7d7c966d9545f5e14cd0f5140a31d651c6f1b26
