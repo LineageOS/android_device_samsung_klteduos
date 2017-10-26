@@ -1,6 +1,3 @@
-# Radio
-rild.libpath=/system/lib/libsec-ril.so
-
 # RIL
 persist.radio.multisim.config=dsds
 ro.multisim.simslotcount=2
