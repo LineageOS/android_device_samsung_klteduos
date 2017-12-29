@@ -27,6 +27,9 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 PRODUCT_PACKAGES += \
     init.target.rc
 
+# Fingerprint
+$(call inherit-product, device/samsung/klte-common/fingerprint/product.mk)
+
 # NFC
 # See https://github.com/CyanogenMod/android_external_libnfc-nci/blob/cm-14.1/halimpl/pn54x/Android.mk#L21
 # for magic values of NXP_CHIP_TYPE.
