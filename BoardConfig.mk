@@ -18,10 +18,6 @@ include device/samsung/klte-common/BoardConfigCommon.mk
 
 TARGET_OTA_ASSERT_DEVICE := kltexx,klte,klteduos
 
-# Audio
-AUDIO_FEATURE_ENABLED_MULTI_VOICE_SESSIONS := true
-AUDIO_FEATURE_SAMSUNG_DUAL_SIM := true
-
 # Kernel
 TARGET_KERNEL_CONFIG := lineage_klteduos_defconfig
 
@@ -35,6 +31,9 @@ TARGET_LIBINIT_MSM8974_DEFINES_FILE := device/samsung/klteduos/init/init_klte.cp
 # NFC
 BOARD_NFC_CHIPSET := pn547
 BOARD_NFC_HAL_SUFFIX := msm8974
+
+# Radio/RIL
+include $(COMMON_PATH)/radio/dual/board.mk
 
 # inherit from the proprietary version
 -include vendor/samsung/klteduos/BoardConfigVendor.mk

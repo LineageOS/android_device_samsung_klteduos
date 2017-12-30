@@ -23,10 +23,6 @@ $(call inherit-product-if-exists, vendor/samsung/klteduos/klteduos-vendor.mk)
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
-# RIL
-PRODUCT_PACKAGES += \
-    init.target.rc
-
 # Fingerprint
 $(call inherit-product, device/samsung/klte-common/fingerprint/product.mk)
 
@@ -42,6 +38,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/libnfc-brcm.conf:system/vendor/etc/libnfc-brcm.conf \
     $(LOCAL_PATH)/configs/libnfc-nxp.conf:system/vendor/etc/libnfc-nxp.conf \
     $(LOCAL_PATH)/configs/nfcee_access.xml:system/vendor/etc/nfcee_access.xml
+
+# Radio/RIL
+$(call inherit-product, device/samsung/klte-common/radio/dual/product.mk)
 
 # common klte
 $(call inherit-product, device/samsung/klte-common/klte.mk)
