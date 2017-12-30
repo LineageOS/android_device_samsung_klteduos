@@ -1,4 +1,5 @@
 # Copyright (C) 2015 The Android Open Source Project
+# Copyright (C) 2017 The LineageOS Project
 #
 # IMPORTANT: Do not create world writable files or directories.
 # This is a common source of Android security bugs.
@@ -7,10 +8,6 @@
 # for multi rild
 service ril-daemon2 /system/bin/rild -l /system/vendor/lib/libsec-ril-dsds.so -c 2
     class main
-    socket rild2 stream 660 root radio
-    socket sap_uim_socket2 stream 660 bluetooth bluetooth
-    socket rild-debug2 stream 660 radio system
-    user root
-    group radio cache inet misc audio log readproc wakelock qcom_diag
-
-
+    user radio
+    group radio cache inet misc audio log readproc wakelock oem_2901
+    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
