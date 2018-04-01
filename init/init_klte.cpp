@@ -1,6 +1,6 @@
 /*
    Copyright (c) 2016, The Linux Foundation. All rights reserved.
-   Copyright (c) 2017, The LineageOS Project. All rights reserved.
+   Copyright (c) 2017-2018, The LineageOS Project. All rights reserved.
 
    Redistribution and use in source and binary forms, with or without
    modification, are permitted provided that the following conditions are
@@ -58,17 +58,17 @@ void init_target_properties()
 
     if (bootloader.find("G900FD") == 0) {
         /* klteduosxx */
-        property_override("ro.build.fingerprint", "samsung/klteduosxx/klte:6.0.1/MMB29M/G900FDXXS1CQD2:user/release-keys");
+        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/klteduosxx/klte:6.0.1/MMB29M/G900FDXXS1CQD2:user/release-keys");
         property_override("ro.build.description", "klteduosxx-user 6.0.1 MMB29M G900FDXXS1CQD2 release-keys");
-        property_override("ro.product.model", "SM-G900FD");
-        property_override("ro.product.device", "klte");
+        property_override_dual("ro.product.model", "ro.vendor.product.model", "SM-G900FD");
+        property_override_dual("ro.product.device", "ro.vendorproduct.device", "klte");
         gsm_properties();
     } else if (bootloader.find("G900MD") == 0) {
         /* klteduosub */
-        property_override("ro.build.fingerprint", "samsung/klteduosub/klte:6.0.1/MMB29M/G900MDUBS1CQD2:user/release-keys");
+        property_override_dual("ro.build.fingerprint", "ro.vendor.build.fingerprint", "samsung/klteduosub/klte:6.0.1/MMB29M/G900MDUBS1CQD2:user/release-keys");
         property_override("ro.build.description", "klteduosub-user 6.0.1 MMB29M G900MDUBS1CQD2 release-keys");
-        property_override("ro.product.model", "SM-G900MD");
-        property_override("ro.product.device", "klte");
+        property_override_dual("ro.product.model", "ro.vendor.product.model", "SM-G900MD");
+        property_override_dual("ro.product.device", "ro.vendorproduct.device", "klte");
         gsm_properties();
     }
 
