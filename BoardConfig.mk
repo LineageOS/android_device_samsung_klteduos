@@ -25,8 +25,7 @@ TARGET_KERNEL_CONFIG := lineage_klteduos_defconfig
 include $(COMMON_PATH)/fingerprint/board.mk
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_msm8974
-TARGET_LIBINIT_MSM8974_DEFINES_FILE := device/samsung/klteduos/init/init_klte.cpp
+TARGET_INIT_VENDOR_LIB := libinit_klteduos
 
 # NFC
 include $(COMMON_PATH)/nfc/pn547/board.mk
