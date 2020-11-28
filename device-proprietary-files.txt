@@ -1,3 +1,3 @@
 # Radio - pinned to haxxed G900FDXXS1CQD2_G900FDOJV1CQB1_XSG
-lib/libsec-ril.so:vendor/lib/libsec-ril.so|3ed4263a5854bba3dadba8618505b0f8fb3d85ae
-lib/libsec-ril-dsds.so:vendor/lib/libsec-ril-dsds.so|c00f4ec5ade53d980eec4b0aef6e91e7d0a11dec
+lib/libsec-ril.so:vendor/lib/libsec-ril.so|28fcc9ff02bfa68f48f495acfc1cfac3aff252d4
+lib/libsec-ril-dsds.so:vendor/lib/libsec-ril-dsds.so|fd104e86882a386c49453898f3ff1194600cd402
